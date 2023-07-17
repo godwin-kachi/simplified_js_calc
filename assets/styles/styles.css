@@ -25,7 +25,7 @@
     grid-template-columns: repeat(4, auto);
 }
 
-.btn-keys:hover{
+.btn-keys:hover, .btn-key:hover{
     background-color: #1c6c64;
 }
 
@@ -38,17 +38,17 @@
     grid-column: 4/5;
     grid-row: 3;
 }
-.btn-keys {
+.btn-keys, .btn-key {
     background-color: #1c432c;
     color: #6885A7;
 }
 
-.btn-operator {
+.btn-operator, .btn-operato, .btn-operat {
     background-color: #949412;
     color: #ffffff;
 }
 
-.btn-operator:hover {
+.btn-operator:hover, .btn-operato:hover, .btn-operat:hover{
     background-color: #ccc;
 }
 
