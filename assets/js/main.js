@@ -7,17 +7,23 @@ const enter = document.querySelector('.equal')
 const bksp = document.querySelector('.right')
 const clear = document.querySelector('.rigt')
 
-// console.log(operators)
 
+enter.addEventListener('click', () => {
+    screen.innerHTML = eval(screen.innerHTML)
+})
 
 
 dot.addEventListener('click', () => {
     if (screen.innerHTML.includes('.')) {
         dot.classList.add('is-depressed')
-        // console.log('Decimal point already exists')
     }else{
         screen.innerHTML += '.'
     }
+})
+
+enter.addEventListener('click', ()=> {
+    let p = eval(screen.innerHTML)
+    screen.innerHTML = p
 })
 
 bksp.addEventListener('click', () => {
@@ -40,29 +46,10 @@ operators.forEach(items => {
     })
 })
 
-// console.log(nhs)
-
-// for (i = 0; elelments = nhs[i]; i++) {
-//     i.addEventListener('click', () => {
-//         console.log(i.innerHTML)
-//     })
-// }
-
-
-// nhs.addEventListener('click', () => {
-//     for (i = 0; elements = nhs[i]; i++){
-//         console.log(elements.innerHTML)
-//     }
-// })
-
-// nhs.addEventListener('click', () => {
-//     console.log('this')
-// })
 
 
 nhs.forEach(item => {
     item.addEventListener('click', () => {
-        // console.log(item.innerHTML)
         if(screen.innerHTML == 0) {
             screen.innerHTML = item.innerHTML
         } else {
@@ -72,7 +59,3 @@ nhs.forEach(item => {
     })
 })
 
-
-// function show(n) {
-//     console.log(n)
-// }
