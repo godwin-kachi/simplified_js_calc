@@ -1,74 +1,79 @@
 * {
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .calculator__display {
-    width: 100%;
-    height: 4rem;
-    border: 1px solid #ccc;
-    font-size: 3rem;
-    text-align: right;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #ccc;
+  font-size: 3rem;
+  text-align: right;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
 }
 
 .calculator {
-    width: 30rem;
-    max-height: 40rem;
-    margin: auto;
-    background-color: #949412;
-    border-radius: 1.25rem;
+  width: 30rem;
+  max-height: 40rem;
+  margin: auto;
+  background-color: #949412;
+  border-radius: 1.25rem;
 }
 
 .calculator__keys {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }
 
-.btn-keys:hover, .btn-key:hover{
-    background-color: #1c6c64;
+.btn-keys:hover,
+.btn-key:hover {
+  background-color: #1c6c64;
 }
 
 .right {
-    grid-column: 4/5;
-    grid-row: 2;
+  grid-column: 4/5;
+  grid-row: 2;
 }
 
 .rigt {
-    grid-column: 4/5;
-    grid-row: 3;
+  grid-column: 4/5;
+  grid-row: 3;
 }
-.btn-keys, .btn-key {
-    background-color: #1c432c;
-    color: #6885A7;
-}
-
-.btn-operator, .btn-operato, .btn-operat {
-    background-color: #949412;
-    color: #ffffff;
+.btn-keys,
+.btn-key {
+  background-color: #1c432c;
+  color: #6885a7;
 }
 
-.btn-operator:hover, .btn-operato:hover, .btn-operat:hover{
-    background-color: #ccc;
+.btn-operator,
+.btn-operato,
+.btn-operat {
+  background-color: #949412;
+  color: #ffffff;
+}
+
+.btn-operator:hover,
+.btn-operato:hover,
+.btn-operat:hover {
+  background-color: #ccc;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 30px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    border: 0.3px solid rgba(251, 253, 255, 0.171);
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  border: 0.3px solid rgba(251, 253, 255, 0.171);
 }
 
 .equal {
-    grid-row: 4 / span 6;
-    grid-column: 4;
+  grid-row: 4 / span 6;
+  grid-column: 4;
 }
 
 .zero {
-    grid-column: span 2;
+  grid-column: span 2;
 }
